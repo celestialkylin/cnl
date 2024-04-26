@@ -36,7 +36,7 @@ namespace cnl {
 
     template<std::integral Number, class Value>
     struct from_value<Number, Value>
-        : _impl::from_value_simple<Value, Value> {
+        : _impl::from_value_simple<Number, Value> {
     };
 
     template<std::integral Number, CNL_IMPL_CONSTANT_VALUE_TYPE Value>
